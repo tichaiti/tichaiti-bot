@@ -13,6 +13,11 @@ def main():
     bot.run()
 
 
+@respond_to('hi', re.IGNORECASE)
+def sayhi(ws):
+    ws.reply('Koman ou ye?')
+
+
 @respond_to('(sak*.ap*.fet)', re.IGNORECASE)
 def sakapfet(ws, message):
     ws.reply('nap boule!')
@@ -24,7 +29,7 @@ def komanwye(ws, message):
     ws.reply(random.choice(repons))
 
 
-@listen_to('joined')
+@listen_to('joined')  # ToDo: test for "team_join" event
 def bienvenue(ws):
     mesaj = ['Onè! Respè!', 'Bienvenue!', 'Welcome!']
     ws.reply(random.choice(mesaj))

@@ -89,6 +89,9 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+.idea/
+apikey.py
+tmp/
 
 # Spyder project settings
 .spyderproject

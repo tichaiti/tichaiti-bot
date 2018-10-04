@@ -1,0 +1,2 @@
+requests>=2.19.1
+slackbot>=0.5.3

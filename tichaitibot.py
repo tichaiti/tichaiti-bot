@@ -26,11 +26,14 @@ def komanwye(ws, message):
 
 @listen_to('joined')
 def bienvenue(ws):
-    mesajyo = ['Onè! Respè!', 'Bienvenue!', 'Welcome!']
-    mesaj = random.choice(mesajyo)
+    saliitasyon = ['Onè! Respè!', 'Bienvenue!', 'Welcome!', 'Bienvenido!']
+    mesaj = random.choice(saliitasyon)
     mesaj += '\n\nPlease add to your profile "What you do" (including the technologies you know).'
-    mesaj += '\nAnd include your [city] right after your Display name (siw vle).'
+    mesaj += '\nAnd include your "[city]" right after your Display name (100% voluntary).'
     mesaj += '\nWe are happy you joined!'
+    mesaj += '\n\nAjoute sou pwofil ou "Kisa ki angaje tanw" (mansyone teknoloji ou bon ladanl/ou renmen).'
+    mesaj += '\nEpi apre ti-non w sou Slack mete nan ki "[site/vil]" ou ye (siw vle).'
+    mesaj += '\nNou kontan ou la!'
     ws.reply(mesaj)
 
 

@@ -8,11 +8,6 @@ from slackbot.bot import respond_to
 from slackbot.bot import listen_to
 
 
-def main():
-    bot = Bot()
-    bot.run()
-
-
 @respond_to('hi', re.IGNORECASE)
 def sayhi(ws):
     ws.reply('Koman ou ye?')
@@ -29,12 +24,19 @@ def komanwye(ws, message):
     ws.reply(random.choice(repons))
 
 
-@listen_to('joined')  # ToDo: test for "team_join" event
+@listen_to('joined')
 def bienvenue(ws):
-    mesaj = ['Onè! Respè!', 'Bienvenue!', 'Welcome!']
-    ws.reply(random.choice(mesaj))
+    mesajyo = ['Onè! Respè!', 'Bienvenue!', 'Welcome!']
+    mesaj = random.choice(mesajyo)
+    mesaj += '\n\nPlease add to your profile "What you do" (including the technologies you know).'
+    mesaj += '\nAnd include your [city] right after your Display name (siw vle).'
+    mesaj += '\nWe are happy you joined!'
+    ws.reply(mesaj)
+
+
+def main():
+    Bot().run()
 
 
 if __name__ == "__main__":
     main()
-

@@ -1,7 +1,7 @@
-import apikey
+import os
 
-API_TOKEN = apikey.tichaiti
-DEFAULT_REPLY = 'Sorry, mwen pa konprann...'
+API_TOKEN = os.environ['TICHAITI_TOKEN']
+DEFAULT_REPLY = 'Mwen pa konprann...'
 ERRORS_TO = 'tichaitibot-errs'
 PLUGINS = [
     'slackbot.plugins',

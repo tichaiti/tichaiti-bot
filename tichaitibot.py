@@ -24,19 +24,18 @@ def komanwye(ws, message):
     ws.reply(random.choice(repons))
 
 
-# @listen_to('^joined\s\#')
-@listen_to('joined')
+@listen_to('^joined\s\#', re.IGNORECASE)
 def bienvenue(ws):
     saliitasyon = ['Onè pou ou! Ak respè!', 'Bienvenue!', 'Welcome!', 'Bienvenido!']
     mesaj = random.choice(saliitasyon)
-    mesaj += '\n\n* Please add "What you do" (including the technologies you know) to your profile.'
+    mesaj += '\n\nWe are really happy you joined!'
+    mesaj += '\n* Please add "What you do" (including the technologies you know) to your profile.'
     mesaj += '\n* Include your "[city]" right after your Display name (100% voluntary).'
     mesaj += '\n* Keep in mind, we like to use threads to keep conversations in context.'
-    mesaj += '\nWe are really happy you joined!'
-    mesaj += '\n\n* Ajoute sou pwofil ou "Kisa ki angaje tanw" (teknoloji ou bon ladanl/ou renmen).'
+    mesaj += '\n\nNou vr&egrave;man kontan ou la!'
+    mesaj += '\n* Ajoute sou pwofil ou "Kisa ki angaje tanw" (teknoloji ou bon ladanl/ou renmen).'
     mesaj += '\n* Epi apre tinon''w sou Slack mete nan ki "[site/vil]" ou ye (siw vle).'
     mesaj += '\n* Toujou f&egrave; repons nan Thread (fil konv&egrave;sasyon) yo avan tou.'
-    mesaj += '\nNou vr&egrave;man kontan ou la!'
     ws.reply(mesaj)
 
 

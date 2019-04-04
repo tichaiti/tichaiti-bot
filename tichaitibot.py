@@ -24,8 +24,8 @@ def komanwye(ws, message):
     ws.reply(random.choice(repons))
 
 
-@listen_to('^joined\s\#')
-# @listen_to('joined')
+# @listen_to('^joined\s\#')
+@listen_to('joined')
 def bienvenue(ws):
     saliitasyon = ['Onè pou ou! Ak respè!', 'Bienvenue!', 'Welcome!', 'Bienvenido!']
     mesaj = random.choice(saliitasyon)

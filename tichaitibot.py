@@ -35,7 +35,7 @@ def bienvenue(ws):
     mesaj += '\nWe are really happy you joined!'
     mesaj += '\n\n* Ajoute sou pwofil ou "Kisa ki angaje tanw" (teknoloji ou bon ladanl/ou renmen).'
     mesaj += '\n* Epi apre tinon''w sou Slack mete nan ki "[site/vil]" ou ye (siw vle).'
-    mesaj += '\n* Toujou f&egrave; repons nan Thread (fil konv&egrave;sasyon) yo pou nou.'
+    mesaj += '\n* Toujou f&egrave; repons nan Thread (fil konv&egrave;sasyon) yo avan tou.'
     mesaj += '\nNou vr&egrave;man kontan ou la!'
     ws.reply(mesaj)
 

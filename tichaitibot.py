@@ -32,10 +32,10 @@ def bienvenue(ws):
     mesaj += '\n* Please add "What you do" (including the technologies you know) to your profile.'
     mesaj += '\n* Include your "[city]" right after your Display name (100% voluntary).'
     mesaj += '\n* Keep in mind, we like to use threads to keep conversations in context.'
-    mesaj += '\n\nNou vr&egrave;man kontan ou la!'
+    mesaj += '\n\nNou vrèman kontan ou la!'
     mesaj += '\n* Ajoute sou pwofil ou "Kisa ki angaje tanw" (teknoloji ou bon ladanl/ou renmen).'
     mesaj += '\n* Epi apre tinon''w sou Slack mete nan ki "[site/vil]" ou ye (siw vle).'
-    mesaj += '\n* Toujou f&egrave; repons nan Thread (fil konv&egrave;sasyon) yo avan tou.'
+    mesaj += '\n* Toujou fè repons nan Thread (fil konvèsasyon) yo avan tou.'
     ws.reply(mesaj)
 
 
